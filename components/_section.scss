@@ -1,0 +1,236 @@
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .grow {
+    .mobile-section-bg-top1 {
+      width: 100%;
+      margin-bottom: -55px;
+    }
+
+    .desktop-section-bg-top1 {
+      display: none;
+    }
+    .grow-cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      padding: 80px 20px 80px 20px;
+      background-color: $whiteColor;
+    }
+
+    img {
+      width: 200px;
+    }
+
+    h2 {
+      color: $headerColor;
+      text-align: center;
+      margin-top: 40px;
+    }
+    p {
+      color: $headerColor;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .mobile-section-bg-bottom1 {
+      width: 100%;
+      margin-bottom: -20px;
+    }
+    .desktop-section-bg-bottom1 {
+      display: none;
+    }
+  }
+  .flowing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 80px 20px 80px 20px;
+    background-color: $whiteColor;
+    background-color: white;
+
+    img {
+      width: 200px;
+    }
+
+    h2 {
+      color: $headerColor;
+      text-align: center;
+      margin-top: 40px;
+    }
+    p {
+      color: $headerColor;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  .users {
+    .mobile-section-bg-top2 {
+      width: 100%;
+      margin-bottom: -60px;
+    }
+    .desktop-section-bg-top2 {
+      display: none;
+    }
+
+    .user-cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      padding: 80px 20px 80px 20px;
+      background-color: $whiteColor;
+      padding: 40px 20px 90px 20px;
+
+      img {
+        width: 200px;
+      }
+
+      h2 {
+        color: $headerColor;
+        text-align: center;
+        margin-top: 40px;
+      }
+      p {
+        color: $headerColor;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+    .mobile-section-bg-bottom2 {
+      width: 100%;
+    }
+    .desktop-section-bg-bottom2 {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .grow {
+      .mobile-section-bg-top1 {
+        width: 100%;
+        margin-bottom: -55px;
+      }
+
+      .mobile-section-bg-top1 {
+        width: 100%;
+        margin-bottom: -55px;
+        display: none;
+      }
+
+      .desktop-section-bg-top1 {
+        display: block;
+        width: 100%;
+        margin-bottom: -55px;
+      }
+      .grow-cont {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding: 80px 20px 80px 20px;
+        background-color: $whiteColor;
+
+        .grow-text {
+          text-align: start;
+
+          h2 {
+            text-align: start;
+          }
+          p {
+            text-align: start;
+          }
+        }
+        img {
+          width: 300px;
+        }
+      }
+      .mobile-section-bg-bottom1 {
+        width: 100%;
+        margin-bottom: -20px;
+        display: none;
+      }
+      .desktop-section-bg-bottom1 {
+        display: block;
+        width: 100%;
+        margin-bottom: -20px;
+      }
+    }
+
+    .flowing {
+      flex-direction: row;
+      margin-top: 50px;
+      background-color: white;
+
+      .flowing-text {
+        h2 {
+          text-align: start;
+        }
+        p {
+          text-align: start;
+        }
+      }
+      img {
+        width: 300px;
+      }
+    }
+    .users {
+      .mobile-section-bg-top2 {
+        display: none;
+      }
+      .desktop-section-bg-top2 {
+        width: 100%;
+        margin-bottom: -60px;
+        display: block;
+      }
+
+      .user-cont {
+        flex-direction: row-reverse;
+        margin-top: 50px;
+        padding: 40px 20px 90px 20px;
+
+        h2 {
+          text-align: start;
+        }
+
+        p {
+          text-align: start;
+        }
+
+        img {
+          width: 300px;
+        }
+      }
+
+      .mobile-section-bg-bottom2 {
+        display: none;
+      }
+      .desktop-section-bg-bottom2 {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grow-cont {
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+}

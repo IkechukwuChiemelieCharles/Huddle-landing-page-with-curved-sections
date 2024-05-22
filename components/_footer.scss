@@ -1,0 +1,215 @@
+footer {
+  position: relative;
+  overflow-x: hidden;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    // margin-top: 20px;
+    color: white;
+    background-color: $headerColor;
+    padding: 20px 50px 20px 50px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  // background-image: url(images/bg-footer-top-mobile.svg);
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // padding: 20px;
+
+  .footer-bg {
+    width: 100%;
+    margin-bottom: -10px;
+  }
+
+  .footer-container {
+    background-color: $headerColor;
+    padding: 20px 20px 20px 20px;
+
+    // position: absolute;
+    // background-image: url(images/bg-footer-top-mobile.svg);
+    // background-position: top;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+
+    .newletter {
+      color: $whiteColor;
+      padding: 20px;
+      padding-top: 50px;
+
+      p {
+        margin-top: 20px;
+      }
+    }
+    .inputbox {
+      display: flex;
+      flex-direction: column;
+
+      .input-error {
+        display: flex;
+        flex-direction: column;
+        .error-message {
+          color: $lightRed;
+          margin-top: 5px;
+          // display: none;
+        }
+        .success-msg {
+          color: green;
+          margin-top: 5px;
+          // display: none;
+        }
+      }
+
+      input {
+        padding: 10px 20px;
+
+        border-radius: 5px;
+        border: none;
+        margin-top: 20px;
+      }
+      .btn-cont {
+        align-self: flex-end;
+      }
+
+      button {
+        background-color: $btnColor;
+        border-radius: 5px;
+        border: none;
+        padding: 10px 20px;
+        width: 100px;
+        align-self: flex-end;
+        margin-top: 10px;
+        color: $whiteColor;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: $btnColor2;
+      }
+    }
+    .logo-write-up {
+      margin-top: 80px;
+
+      .logo {
+        filter: invert(50%) brightness(500%);
+        width: 150px;
+      }
+      p {
+        color: $whiteColor;
+        margin-top: 10px;
+      }
+      .phone {
+        display: flex;
+        margin-top: 30px;
+
+        img {
+          width: 15px;
+          height: 15px;
+        }
+        p {
+          margin-left: 20px;
+        }
+      }
+      .email {
+        @extend.phone;
+        margin-top: 10px;
+      }
+
+      .icons {
+        margin-top: 30px;
+        display: flex;
+
+        .fb {
+          background-color: white;
+          display: flex;
+          align-items: center;
+          max-width: 20px;
+          justify-content: end;
+          padding-right: 2px;
+          padding-left: 8px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          color: $headerColor;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+        .fb:hover {
+          background-color: skyblue;
+        }
+        .fa-instagram {
+          margin-left: 20px;
+          color: white;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .fa-instagram:hover {
+          color: skyblue;
+        }
+
+        .twit {
+          @extend.fb;
+          margin-left: 20px;
+        }
+        .twit:hover {
+          background-color: skyblue;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  footer {
+    .footer-container {
+      background-color: $headerColor;
+      padding: 20px 5px 20px 5px;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .input-cont {
+        padding-left: 60px;
+        padding-right: 60px;
+        .newletter {
+          color: $whiteColor;
+          padding-left: 10px;
+
+          padding-top: 50px;
+
+          p {
+            margin-top: 20px;
+          }
+        }
+
+        .inputbox {
+          display: flex;
+          flex-direction: row;
+
+          input {
+            width: 150px;
+            padding: 10px 20px;
+
+            border-radius: 5px;
+            border: none;
+            margin-top: 20px;
+          }
+
+          .btn-cont {
+            margin-bottom: 5px;
+
+            button {
+              padding: 10px 20px;
+              width: 100px;
+              align-self: flex-end;
+              // margin-top: 20px;
+            }
+          }
+        }
+      }
+
+      .logo-write-up {
+        margin-top: 40px;
+      }
+    }
+  }
+}

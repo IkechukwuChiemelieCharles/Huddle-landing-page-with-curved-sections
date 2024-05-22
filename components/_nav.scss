@@ -1,0 +1,30 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  .logo {
+    width: 100px;
+    height: 20px;
+  }
+  button {
+    background-color: white;
+    border: 1px $btnColor solid;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: $btnColor;
+    cursor: pointer;
+  }
+
+  button:hover {
+    border: 1px $btnColor2 solid;
+    color: $btnColor2;
+  }
+}
+@media screen and (min-width: 576px) {
+  nav {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
