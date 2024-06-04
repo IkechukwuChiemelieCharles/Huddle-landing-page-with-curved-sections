@@ -127,6 +127,8 @@ main {
 }
 @media screen and (min-width: 1400px) {
   main {
+    margin-top: 100px;
+
     h1 {
       font-size: 50px;
     }
@@ -136,9 +138,19 @@ main {
       font-weight: lighter;
       margin-bottom: 30px;
       font-family: $header-font;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 400;
       padding: 0 150px;
+    }
+    .pinkbtn {
+      margin-top: 50px;
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
+    img {
+      width: 850px;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
   }
 }

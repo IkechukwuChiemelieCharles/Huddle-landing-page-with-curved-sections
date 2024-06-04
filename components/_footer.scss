@@ -342,138 +342,140 @@ footer {
     }
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   footer {
-    .attribution {
-      font-size: 24px;
-      text-align: center;
-      // margin-top: 20px;
-      color: white;
-      background-color: $headerColor;
-      padding: 20px 50px 20px 50px;
-      border: none;
-    }
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
     .footer-container {
-      background-color: $headerColor;
-      padding: 20px 100px 20px 100px;
-      gap: 50px;
+      .attribution {
+        font-size: 24px;
+        text-align: center;
+        // margin-top: 20px;
+        color: white;
+        background-color: $headerColor;
+        padding: 20px 50px 20px 50px;
+        border: none;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .footer-container {
+        background-color: $headerColor;
+        padding: 20px 100px 20px 100px;
+        gap: 50px;
 
-      .input-cont {
-        .newletter {
-          color: $whiteColor;
-          padding: 20px;
-          padding-top: 50px;
-          font-size: 40px;
+        .input-cont {
+          .newletter {
+            color: $whiteColor;
+            padding: 20px;
+            padding-top: 50px;
+            font-size: 30px;
 
-          p {
-            margin-top: 20px;
-            font-family: $header-font;
-            font-weight: 400;
-            font-size: 24px;
+            p {
+              margin-top: 20px;
+              font-family: $header-font;
+              font-weight: 400;
+              font-size: 20px;
+            }
           }
-        }
-        .inputbox {
-          display: flex;
-          flex-direction: row;
-          input {
-            padding: 25px 20px;
-            border-radius: 5px;
-            border: none;
-            margin-top: 20px;
-            width: 350px;
-          }
-          ::placeholder {
-            font-size: 24px;
-          }
-          .btn-cont {
-            margin-bottom: 5px;
+          .inputbox {
+            display: flex;
+            flex-direction: row;
+            input {
+              padding: 25px 20px;
+              border-radius: 5px;
+              border: none;
+              margin-top: 20px;
+              width: 350px;
+            }
+            ::placeholder {
+              font-size: 24px;
+            }
+            .btn-cont {
+              margin-bottom: 5px;
 
-            button {
-              width: 200px;
-              // height: 55px;
-              align-self: flex-end;
-              margin-left: 50px;
-              font-size: 30px;
+              button {
+                width: 200px;
+                // height: 55px;
+                align-self: flex-end;
+                margin-left: 50px;
+                font-size: 20px;
+              }
             }
           }
         }
-      }
-      .logo-write-up {
-        margin-top: 60px;
+        .logo-write-up {
+          margin-top: 60px;
 
-        .logo {
-          filter: invert(50%) brightness(500%);
-          width: 300px;
-        }
-        p {
-          color: $whiteColor;
-          font-family: $header-font;
-          font-weight: 400;
-          font-size: 30px;
-          margin-top: 10px;
-        }
-        .phone {
-          display: flex;
-          margin-top: 30px;
-
-          img {
-            width: 25px;
-            height: 25px;
+          .logo {
+            filter: invert(50%) brightness(500%);
+            width: 300px;
           }
           p {
-            margin-left: 20px;
-            margin-top: -1px;
+            color: $whiteColor;
             font-family: $header-font;
             font-weight: 400;
             font-size: 20px;
+            margin-top: 10px;
           }
-        }
-        .email {
-          @extend.phone;
-          margin-top: 10px;
-        }
-
-        .icons {
-          margin-top: 30px;
-          display: flex;
-          font-size: 40px;
-
-          .fb {
-            background-color: white;
+          .phone {
             display: flex;
-            align-items: center;
-            max-width: 40px;
-            justify-content: end;
-            padding-right: 2px;
-            padding-left: 8px;
-            padding-top: 24px;
-            padding-bottom: 20px;
-            color: $headerColor;
-            border-radius: 2px;
-            cursor: pointer;
+            margin-top: 30px;
+
+            img {
+              width: 25px;
+              height: 25px;
+            }
+            p {
+              margin-left: 20px;
+              margin-top: -1px;
+              font-family: $header-font;
+              font-weight: 400;
+              font-size: 20px;
+            }
           }
-          .fb:hover {
-            background-color: skyblue;
-          }
-          .fa-instagram {
-            margin-left: 20px;
-            color: white;
-            font-size: 40px;
-            cursor: pointer;
-          }
-          .fa-instagram:hover {
-            color: skyblue;
+          .email {
+            @extend.phone;
+            margin-top: 10px;
           }
 
-          .twit {
-            @extend.fb;
-            margin-left: 20px;
-          }
-          .twit:hover {
-            background-color: skyblue;
+          .icons {
+            margin-top: 30px;
+            display: flex;
+            font-size: 40px;
+
+            .fb {
+              background-color: white;
+              display: flex;
+              align-items: center;
+              max-width: 40px;
+              justify-content: end;
+              padding-right: 2px;
+              padding-left: 8px;
+              padding-top: 24px;
+              padding-bottom: 20px;
+              color: $headerColor;
+              border-radius: 2px;
+              cursor: pointer;
+            }
+            .fb:hover {
+              background-color: skyblue;
+            }
+            .fa-instagram {
+              margin-left: 20px;
+              color: white;
+              font-size: 40px;
+              cursor: pointer;
+            }
+            .fa-instagram:hover {
+              color: skyblue;
+            }
+
+            .twit {
+              @extend.fb;
+              margin-left: 20px;
+            }
+            .twit:hover {
+              background-color: skyblue;
+            }
           }
         }
       }
