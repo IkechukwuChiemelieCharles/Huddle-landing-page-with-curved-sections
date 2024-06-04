@@ -7,9 +7,11 @@
   margin-top: 120px;
   padding-top: 30px;
   padding-bottom: 150px;
+  font-family: $header-font;
 
   h2 {
     color: $headerColor;
+    font-weight: 700;
   }
   button {
     border: none;
@@ -21,8 +23,58 @@
     margin-top: 20px;
     box-shadow: 0 1px 5px black;
     cursor: pointer;
+    font-family: $header-font;
+    font-weight: 600;
   }
   button:hover {
     background-color: $btnColor2;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+    padding-top: 30px;
+    padding-bottom: 150px;
+
+    h2 {
+      color: $headerColor;
+    }
+    button {
+      border: none;
+      border-radius: 50px;
+      background-color: $btnColor;
+      color: $whiteColor;
+      padding: 20px 80px;
+
+      font-size: 10px;
+      margin-top: 20px;
+      box-shadow: 0 1px 5px black;
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-section {
+    h2 {
+      color: $headerColor;
+      font-size: 35px;
+    }
+    button {
+      border: none;
+      border-radius: 50px;
+      background-color: $btnColor;
+      color: $whiteColor;
+      padding: 20px 80px;
+
+      font-size: 20px;
+      margin-top: 20px;
+      box-shadow: 0 1px 5px black;
+      cursor: pointer;
+    }
   }
 }

@@ -9,12 +9,13 @@ nav {
     height: 20px;
   }
   button {
-    background-color: white;
+    background: none;
     border: 1px $btnColor solid;
     padding: 10px 20px;
     border-radius: 50px;
     color: $btnColor;
     cursor: pointer;
+    font-family: $header-font;
   }
 
   button:hover {
@@ -26,5 +27,27 @@ nav {
   nav {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+
+    .logo {
+      width: 200px;
+      height: 30px;
+    }
+    button {
+      background-color: white;
+      border: 1px $btnColor solid;
+      padding: 15px 40px;
+      border-radius: 50px;
+      color: $btnColor;
+      cursor: pointer;
+      margin-right: 100px;
+    }
   }
 }

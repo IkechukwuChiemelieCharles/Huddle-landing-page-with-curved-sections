@@ -13,7 +13,7 @@ main {
     font-size: 25px;
     margin-bottom: 20px;
     font-family: $header-font;
-    font-weight: $header-weight;
+    font-weight: 700;
   }
 
   p {
@@ -21,8 +21,8 @@ main {
     color: $headerColor;
     font-weight: lighter;
     margin-bottom: 30px;
-    font-family: $body-font;
-    font-weight: 700;
+    font-family: $header-font;
+    font-weight: 400;
   }
 
   .pinkbtn {
@@ -33,7 +33,7 @@ main {
     border-radius: 50px;
     margin-bottom: 20px;
     box-shadow: 0 1px 5px black;
-    font-weight: bold;
+    font-weight: 600;
     font-size: small;
   }
   .pinkbtn:hover {
@@ -54,6 +54,91 @@ main {
     img {
       width: 450px;
       margin-top: 40px;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      text-align: center;
+      color: $headerColor;
+      font-weight: lighter;
+      margin-bottom: 30px;
+      font-family: $header-font;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .pinkbtn {
+      padding: 20px 80px;
+      color: $whiteColor;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 5px black;
+      font-weight: bold;
+      font-size: small;
+    }
+    img {
+      width: 650px;
+      margin-top: 40px;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .pinkbtn {
+      padding: 20px 80px;
+      color: $whiteColor;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 5px black;
+      font-weight: bold;
+      font-size: small;
+    }
+    img {
+      width: 850px;
+      margin-top: 40px;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      text-align: center;
+      color: $headerColor;
+      font-weight: lighter;
+      margin-bottom: 30px;
+      font-family: $header-font;
+      font-size: 30px;
+      font-weight: 400;
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  main {
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      text-align: center;
+      color: $headerColor;
+      font-weight: lighter;
+      margin-bottom: 30px;
+      font-family: $header-font;
+      font-size: 30px;
+      font-weight: 400;
+      padding: 0 150px;
     }
   }
 }

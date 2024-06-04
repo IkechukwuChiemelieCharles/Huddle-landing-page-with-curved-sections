@@ -18,11 +18,17 @@
     font-size: 50px;
     text-align: center;
     color: $headerColor;
+    font-family: $header-font;
+    font-weight: 700;
+  }
+  p {
+    font-family: $header-font;
+    font-weight: 400;
+    color: $paraColor;
   }
   .p2 {
     text-align: center;
-    color: $headerColor;
-    max-width: 50px;
+    max-width: 80px;
     margin-left: 35px;
   }
   div {
@@ -42,6 +48,68 @@
       // max-width: 100px;
       margin-left: 20px;
       text-wrap: nowrap;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .section1 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+
+    .img1 {
+      width: 40px;
+      margin-left: 10px;
+    }
+    .img2 {
+      width: 40px;
+    }
+    .p2 {
+      text-align: center;
+      color: $headerColor;
+      // max-width: 100px;
+      margin-left: 20px;
+      text-wrap: nowrap;
+      font-size: 20px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  .section1 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-top: 20px;
+
+    .img1 {
+      width: 60px;
+      margin-left: 10px;
+    }
+    .img2 {
+      width: 60px;
+    }
+    h1 {
+      font-size: 100px;
+      text-align: center;
+      color: $headerColor;
+      font-family: $header-font;
+      font-weight: 700;
+    }
+    p {
+      font-size: 30px;
+    }
+    .p2 {
+      text-align: center;
+      color: $headerColor;
+      // max-width: 100px;
+      margin-left: 20px;
+      text-wrap: nowrap;
+      font-size: 30px;
     }
   }
 }
