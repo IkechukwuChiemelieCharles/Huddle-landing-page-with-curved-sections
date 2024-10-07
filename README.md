@@ -16,5 +16,5 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 
 
-- [live link](https://huddle-landing-page-with-curved-sections-7nhd.onrender.com)
+- view live link [live link](https://huddle-landing-page-with-curved-sections-7nhd.onrender.com)
 
